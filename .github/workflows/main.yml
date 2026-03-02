@@ -13,7 +13,10 @@ jobs:
         with:
           repository: ${{ vars.REPOSITORY }}
           ref: ${{ vars.REF }}
-
+          
+      - name: Check files   #新增调试步骤
+        run: ls -la
+         
       - name: Setup uv
         uses: astral-sh/setup-uv@v7
 
