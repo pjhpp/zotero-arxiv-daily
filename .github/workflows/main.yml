@@ -10,9 +10,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          repository: ${{ vars.REPOSITORY }}
-          ref: ${{ vars.REF }}
+        # with:
+          #repository: ${{ vars.REPOSITORY }}
+          #ref: ${{ vars.REF }}
           
       - name: Check files   #新增调试步骤
         run: ls -la
